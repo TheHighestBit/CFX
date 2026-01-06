@@ -6427,7 +6427,7 @@ namespace CFXExampleEndpoint
                             }
                         }
                     },
-                    UnitProcessData = new WaveUnitProcessData()
+                    UnitProcessData = new SelectiveUnitProcessData()
                     {
                         FluxAggregates = new List<FluxAggregate>()
                         {
@@ -6517,14 +6517,14 @@ namespace CFXExampleEndpoint
                                     {
                                         Active = true,
                                         Sequence = 1,
-                                        PreheatingSections = new List<WavePreheatingSection>()
+                                        PreheatingSections = new List<SelectivePreheatingSection>()
                                         {
-                                            new WavePreheatingSection()
+                                            new SelectivePreheatingSection()
                                             {
                                                 PowerReadingPoint = 31.0,
                                                 TemperatureReadingValue = 162.0,
                                             },
-                                            new WavePreheatingSection()
+                                            new SelectivePreheatingSection()
                                             {
                                                 PowerReadingPoint = 36.0,
                                                 TemperatureReadingValue = 119,

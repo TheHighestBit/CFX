@@ -9,8 +9,11 @@ namespace CFX.Structures.SolderWave
     /// Preheating section information.
     /// </summary>
     [CFX.Utilities.CreatedVersion("2.0")]
-    public class SelectivePreheatingSection
+    public class SolderWaveSection
     {
+        /// <summary>
+        /// Gets or sets the power set value, representing the configured power level. 0-100%
+        /// </summary>
         public double PowerSetValue { get; set; }
 
         /// <summary>
@@ -19,8 +22,13 @@ namespace CFX.Structures.SolderWave
         public double PowerReadingPoint { get; set; }
 
         /// <summary>
-        /// Gets or sets the temperature reading value.
+        /// Length of this section in centimeters.
         /// </summary>
-        public double TemperatureReadingValue { get; set; }
+        public double SectionLength { get; set; }
+
+        /// <summary>
+        /// Section sequence (1, 2, 3, ...)
+        /// </summary>
+        public int Sequence { get; set; }
     }
 }

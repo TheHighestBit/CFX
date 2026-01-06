@@ -31,6 +31,6 @@ namespace CFX.Structures.SolderWave
         /// <summary>
         /// Gets or sets the unit process data.
         /// </summary>
-        public WaveUnitProcessData UnitProcessData { get; set; }
+        public SelectiveUnitProcessData UnitProcessData { get; set; }
     }
 }

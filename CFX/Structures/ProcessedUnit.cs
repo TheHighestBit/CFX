@@ -24,9 +24,18 @@ namespace CFX.Structures
         }
 
         /// <summary>
-        /// Unique ID of Production Unit, Panel, or Carrier
+        /// Unique ID of Production Unit, Panel
         /// </summary>
         public string UnitIdentifier
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Human readable name of production unit, panel
+        /// </summary>
+        public string UnitName
         {
             get;
             set;
@@ -36,6 +45,24 @@ namespace CFX.Structures
         /// Logical reference of production unit as defined by CFX position rule (see CFX standard)
         /// </summary>
         public int? UnitPositionNumber
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Identifier of the carrier (e.g., pallet, tray, etc.) that contains the production unit.
+        /// </summary>
+        public string CarrierIdentifier
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Human readable name of the carrier design (e.g., pallet, tray, etc.) that contains the production unit.
+        /// </summary>
+        public string CarrierName
         {
             get;
             set;

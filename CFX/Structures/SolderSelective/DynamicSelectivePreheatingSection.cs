@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CFX.Structures.SolderWave
+namespace CFX.Structures.SolderSelective
 {
     /// <summary>
     /// <para>** NOTE: ADDED in CFX 2.0 **</para>
     /// Dynamic preheating section information.
     /// </summary>
     [CFX.Utilities.CreatedVersion("2.0")]
-    public class DynamicWavePreheatingSection
+    public class DynamicSelectivePreheatingSection
     {
         /// <summary>
         /// 1 based sequence (1, 2, 3, ...)

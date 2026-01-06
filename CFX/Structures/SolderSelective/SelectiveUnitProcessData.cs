@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CFX.Structures.SolderWave
+namespace CFX.Structures.SolderSelective
 {
     /// <summary>
     /// <para>** NOTE: ADDED in CFX 2.0 **</para>
@@ -11,6 +11,11 @@ namespace CFX.Structures.SolderWave
     [CFX.Utilities.CreatedVersion("2.0")]
     public class SelectiveUnitProcessData
     {
+        /// <summary>
+        /// Gets or sets the recipe used in production of this unit.
+        /// </summary>
+        public Recipe Recipe { get; set; }
+
         /// <summary>
         /// Gets or sets the flux stages.
         /// </summary>
@@ -25,10 +30,5 @@ namespace CFX.Structures.SolderWave
         /// Gets or sets the soldering stages.
         /// </summary>
         public List<SolderingAggregate> SolderingAggregates { get; set; }
-
-        /// <summary>
-        /// Gets or sets the cooling stages.
-        /// </summary>
-        public List<CoolingAggregate> CoolingAggregates { get; set; }
     }
 }

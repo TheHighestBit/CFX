@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CFX.Structures.SolderWave
+namespace CFX.Structures.SolderSelective
 {
     /// <summary>
     /// <para>** NOTE: ADDED in CFX 2.0 **</para>
@@ -22,5 +22,10 @@ namespace CFX.Structures.SolderWave
         /// Gets or sets the temperature reading value.
         /// </summary>
         public double TemperatureReadingValue { get; set; }
+
+        /// <summary>
+        /// Gets or sets the process time reading value.
+        /// </summary>
+        public TimeSpan ProcessTimeReadingValue { get; set; }
     }
 }

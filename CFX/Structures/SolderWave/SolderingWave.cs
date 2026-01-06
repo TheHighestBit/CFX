@@ -35,5 +35,10 @@ namespace CFX.Structures.SolderWave
         /// Gets or sets the number of revolutions reading value.
         /// </summary>
         public double NumberOfRevolutionsReadingValue { get; set; }
+
+        /// <summary>
+        /// Sections making up this solder wave.
+        /// </summary>
+        public List<SolderWaveSection> Sections { get; set; }
     }
 }
