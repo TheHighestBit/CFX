@@ -9,7 +9,7 @@ namespace CFX.Structures.SolderWave
     /// Preheating section information.
     /// </summary>
     [CFX.Utilities.CreatedVersion("2.0")]
-    public class SelectivePreheatingSection
+    public class WavePreheatingSection
     {
         public double PowerSetValue { get; set; }
 

@@ -56,12 +56,12 @@ namespace CFX.Structures.SolderSelective
         public int O2ReadingValue { get; set; }
 
         /// <summary>
-        /// Gets or sets the n2 reading value in %.
+        /// Gets or sets the n2 reading value in l/min.
         /// </summary>
         public double N2ReadingValue { get; set; }
 
         /// <summary>
-        /// Gets or sets the n2 setpoint in %.
+        /// Gets or sets the n2 setpoint in l/min.
         /// </summary>
         public double N2Setpoint { get; set; }
 

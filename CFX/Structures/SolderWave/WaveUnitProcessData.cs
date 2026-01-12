@@ -9,7 +9,7 @@ namespace CFX.Structures.SolderWave
     /// Wave unit process data information.
     /// </summary>
     [CFX.Utilities.CreatedVersion("2.0")]
-    public class SelectiveUnitProcessData
+    public class WaveUnitProcessData
     {
         /// <summary>
         /// Gets or sets the flux stages.

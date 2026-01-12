@@ -24,6 +24,6 @@ namespace CFX.Structures.SolderWave
         /// <summary>
         /// Gets or sets the preheating sections.
         /// </summary>
-        public List<SelectivePreheatingSection> PreheatingSections { get; set; }
+        public List<WavePreheatingSection> PreheatingSections { get; set; }
     }
 }

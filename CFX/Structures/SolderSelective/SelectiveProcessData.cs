@@ -1,15 +1,13 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace CFX.Structures.SolderWave
+namespace CFX.Structures.SolderSelective
 {
     /// <summary>
-    /// <para>** NOTE: ADDED in CFX 2.0 **</para>
-    /// Provides information about the conditions within a wave soldering machine.
     /// </summary>
     [CFX.Utilities.CreatedVersion("2.0")]
     [JsonObject(ItemTypeNameHandling = TypeNameHandling.Auto)]
-    public class WaveProcessData : ProcessData
+    public class SelectiveProcessData : ProcessData
     {
         /// <summary>
         /// List of conveyor data (as seen while the processed unit was processed)
@@ -26,11 +24,9 @@ namespace CFX.Structures.SolderWave
         /// </summary>
         public double UnitLengthSetpoint { get; set; }
 
-        public N2 N2 { get; set; }
-
         /// <summary>
         /// Gets or sets the unit process data.
         /// </summary>
-        public WaveUnitProcessData UnitProcessData { get; set; }
+        public SelectiveUnitProcessData UnitProcessData { get; set; }
     }
 }
