@@ -12,6 +12,11 @@ namespace CFX.Structures.SolderWave
     public class WaveUnitProcessData
     {
         /// <summary>
+        /// Gets or sets the recipe used in production of this unit.
+        /// </summary>
+        public Recipe Recipe { get; set; }
+
+        /// <summary>
         /// Gets or sets the flux stages.
         /// </summary>
         public List<FluxAggregate> FluxAggregates { get; set; }
