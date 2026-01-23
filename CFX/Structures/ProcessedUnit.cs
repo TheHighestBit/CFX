@@ -33,6 +33,15 @@ namespace CFX.Structures
         }
 
         /// <summary>
+        /// Product code of production unit, panel.
+        /// </summary>
+        public string ProductCode
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Human readable name of production unit, panel
         /// </summary>
         public string UnitName

@@ -953,6 +953,15 @@ namespace CFX.Production.Processing
         }
 
         /// <summary>
+        /// The total time taken to process all of the production units
+        /// </summary>
+        public TimeSpan? TotalProcessTime
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Dynamic structure containing data that is common to all production units processed
         /// by this work transaction.  Any data that is specfic to an individual production unit
         /// will instead be contained within the UnitProcessData property.
