@@ -23,6 +23,15 @@ namespace CFX.Structures.Coating
         }
 
         /// <summary>
+        /// Gets or sets the recipe used in production of this unit.
+        /// </summary>
+        public Recipe Recipe
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// A list of measurements that were taken in the course of the coating or encapsulation operation.
         /// </summary>
         [JsonProperty(ItemTypeNameHandling = TypeNameHandling.Auto)]
@@ -40,6 +49,15 @@ namespace CFX.Structures.Coating
         [CFX.Utilities.CreatedVersion("1.5")]
         [JsonProperty(ItemTypeNameHandling = TypeNameHandling.Auto)]
         public List<CoatingNozzleData> Nozzle
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// A list of fiducial checks that were performed during the coating process in random order.
+        /// </summary>
+        public List<FiducialCheck> FiducialChecks
         {
             get;
             set;
