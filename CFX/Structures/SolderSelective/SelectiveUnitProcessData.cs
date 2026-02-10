@@ -17,6 +17,11 @@ namespace CFX.Structures.SolderSelective
         public Recipe Recipe { get; set; }
 
         /// <summary>
+        /// Gets or sets a value indicating whether code reading is enabled to automatically pick the recipe.
+        /// </summary>
+        public bool IsCodeReadingEnabled { get; set; }
+
+        /// <summary>
         /// Gets or sets the flux stages.
         /// </summary>
         public List<FluxAggregate> FluxAggregates { get; set; }
